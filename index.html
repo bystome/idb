@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Idle Breakout Replica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Idle Breakout</h1>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <div id="controls">
+    <p>Gold: <span id="gold">0</span></p>
+    <button onclick="buyBall('basic')">Buy Basic Ball</button>
+    <button onclick="buyBall('sniper')">Buy Sniper Ball</button>
+    <button onclick="buyBall('scatter')">Buy Scatter Ball</button>
+    <button onclick="upgradeDamage()">Upgrade Damage</button>
+    <button onclick="activatePowerUp('clickFury')">Click Fury</button>
+    <button onclick="activatePowerUp('speedBoost')">Speed Boost</button>
+    <button onclick="activatePowerUp('damageBoost')">Damage Boost</button>
+    <button onclick="prestige()">Prestige</button>
+  </div>
+
+  <script src="balls.js"></script>
+  <script src="bricks.js"></script>
+  <script src="powerups.js"></script>
+  <script src="save.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
